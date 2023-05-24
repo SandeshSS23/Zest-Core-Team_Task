@@ -1,0 +1,76 @@
+.lastDiv{
+  width:100% ;
+  height: 100%;
+  background-image: linear-gradient(to right, #225e9e 0%, #712c69 100%);
+  /* Blue to Dark Blue Gradient   */
+    background-image: linear-gradient(to right, #5595d0 0%, #0d349c 100%);
+  /* Blue to green Gradient   */
+    background-image: linear-gradient(to right, #225e9e 0%, #00a86b 100%);
+   /* Aqua to orange to pink Gradient   */
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  /*  Peach Gradient  */
+  background: linear-gradient(to right, #de6262, #ffb88c);
+/*  Purple Gradient  */
+  background: linear-gradient(to right, #1d2b64, #f8cdda);
+/* Green to Lime Gradient */
+    background: linear-gradient(to right, #43c6ac, #f8ffae);
+}
+#carousel { 
+    perspective: 1200px; 
+    /* background-color: aqua; */
+  
+    padding-top: 10%; 
+    font-size:0; 
+    margin-bottom: 3rem; 
+    overflow: hidden; 
+    height: 90vh;
+  }
+  #spinner { 
+    transform-style: preserve-3d; 
+    height: 300px; 
+    transform-origin: 50% 50% -500px; 
+    transition: 1s; 
+  } 
+  #spinner img { 
+    width: 500px; max-width: 425px; 
+    height: 50vh; max-height:70vh;
+    /* background-size:auto; */
+    position: absolute; left: 30%;
+    transform-origin: 50% 50% -500px;
+    /* outline:1px white solid;  */
+    overflow: hidden;
+  }
+  img:hover{
+    scale:1.1;
+    transition:0.6s;
+  }
+
+  #spinner img:nth-child(1) { transform:rotateY(0deg);}
+  #spinner img:nth-child(2) { transform: rotateY(-45deg);}
+  #spinner img:nth-child(3) { transform: rotateY(-90deg);}
+  #spinner img:nth-child(4) { transform: rotateY(-135deg);}
+  #spinner img:nth-child(5){ transform: rotateY(-180deg);}
+  #spinner img:nth-child(6){ transform: rotateY(-225deg);}
+  #spinner img:nth-child(7){ transform: rotateY(-270deg);}
+  #spinner img:nth-child(8){ transform: rotateY(-315deg);}
+  
+  #carousel ~ span { 
+    color: #0f0f0f; 
+    margin: 5%; 
+    display: inline-block; 
+    text-decoration: none; 
+    /* font-size: rem;  */
+    transition: 0.6s color; 
+    position: relative; 
+    /* margin-top: -6rem;  */
+    border-bottom: none; 
+    line-height: 0; }
+  #carousel ~ span:hover { color: #888; cursor: pointer; }
+
+  @media screen and (max-width:1315px) {
+    
+    .lastDiv{
+      display: none;
+    }
+    
+  }

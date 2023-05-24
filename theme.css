@@ -1,0 +1,153 @@
+
+h1{
+  color: black;
+  font-size: 5em;
+  text-align: center;
+}
+
+/* #theme{
+  height: 100vh;
+} */
+
+.themeIdea{
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  background-image: linear-gradient(to right, #225e9e 0%, #712c69 100%);
+  /* Blue to Dark Blue Gradient   */
+    background-image: linear-gradient(to right, #5595d0 0%, #0d349c 100%);
+  /* Blue to green Gradient   */
+    background-image: linear-gradient(to right, #225e9e 0%, #00a86b 100%);
+   /* Aqua to orange to pink Gradient   */
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  /*  Peach Gradient  */
+  background: linear-gradient(to right, #de6262, #ffb88c);
+/*  Purple Gradient  */
+  background: linear-gradient(to right, #1d2b64, #f8cdda);
+/* Green to Lime Gradient */
+    background: linear-gradient(to right, #43c6ac, #f8ffae);
+  
+}
+
+.mainTheme{
+  height:auto;
+}
+
+.themeVidCont{
+  margin-top: 3rem;
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 2rem;
+  gap: 3rem;
+}
+
+
+hr{
+  align-self: center;
+  width: 100%;
+  color: black;
+  box-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4,
+  0 0 200px #03e9f4;
+transition: 0.4s;  text-align: center;
+}
+
+.video{
+  /* min-width: 400px; */
+  /* max-width: 800px; */
+  width:800px; 
+  height:500px; 
+}
+.video iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.themeContent{
+  /* width:40%; */
+  width: 70vmin;
+  /* height: 28vmin; */
+}
+
+.themeData{
+  font-size: 1.3rem;
+  color: black;
+}
+.marathon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+
+.col{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+
+.col img{
+    margin: 7px 0;
+    border: 2.5px solid #fff;
+    transition: .6s;
+    /* position: relative; */
+}
+
+.col img:hover{
+  scale: 1.05;
+  border-radius: 1rem;
+  transition: 0.5s;
+  border: 5px solid transparent;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+@media screen and (max-width:950px){
+  .video{
+    width: 80%;
+    height: 300px;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  
+.themeData{
+  font-size: 19px;
+}
+}
+
+@media screen and (max-width:950px){
+  h1{
+    font-size: 3rem;
+  }
+  .themeData{
+    font-size: 16px;
+  }
+  .col img{
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}

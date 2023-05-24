@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.wrapperSocial{
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 100;
+  /* width: 800px; */
+}
+.wrapperSocial .buttonSocial{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapperSocial .buttonSocial:hover{
+  width: 200px;
+
+}
+.wrapperSocial .buttonSocial .icon{
+  display: inline-block;
+  height: 80px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapperSocial .buttonSocial:nth-child(1):hover .icon{
+  background: #4267B2;
+  transform: rotate(720deg);
+  transition: all 0.3s ease-in-out;
+
+}
+.wrapperSocial .buttonSocial:nth-child(2):hover .icon{
+  background: #1DA1F2;
+  transform: rotate(720deg);
+  transition: all 0.3s ease-in-out;
+
+}
+.wrapperSocial .buttonSocial:nth-child(3):hover .icon{
+  background: #E1306C;
+  transform: rotate(720deg);
+  transition: all 0.3s ease-in-out;
+}
+.wrapperSocial .buttonSocial:nth-child(4):hover .icon{
+  background: #0077B5;
+  transform: rotate(720deg);
+  transition: all 0.3s ease-in-out;
+}
+.wrapperSocial .buttonSocial:nth-child(5):hover .icon{
+  background: #ff0000;
+  transform: rotate(720deg);
+  transition: all 0.3s ease-in-out;
+}
+.wrapperSocial .buttonSocial .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapperSocial .buttonSocial:hover .icon i{
+  color: #fff;
+}
+.wrapperSocial .buttonSocial span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapperSocial .buttonSocial:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapperSocial .buttonSocial:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapperSocial .buttonSocial:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapperSocial .buttonSocial:nth-child(4) span{
+  color: #333;
+}
+.wrapperSocial .buttonSocial:nth-child(5) span{
+  color: #ff0000;
+}
+
+@media screen and (max-width:550px){
+  .wrapperSocial .buttonSocial{
+    height: 50px;
+    width: 50px;
+    margin: 0 3px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+  .wrapperSocial .buttonSocial .icon{
+    height: 80px;
+    width: 53px;
+    text-align: center;
+    border-radius: 30px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+}
